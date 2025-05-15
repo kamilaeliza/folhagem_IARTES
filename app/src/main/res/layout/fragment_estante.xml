@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/fundo_folhas">
+
+    <!-- 🔍 Campo de busca -->
+    <EditText
+        android:id="@+id/input_busca"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Buscar livro..."
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="10dp" />
+
+    <!-- 🎯 Filtro de status -->
+    <Spinner
+        android:id="@+id/spinner_status"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:spinnerMode="dropdown"
+        android:layout_marginBottom="16dp" />
+
+    <!-- 🧾 Lista de livros -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_estante"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 📭 Mensagem quando estante estiver vazia -->
+    <TextView
+        android:id="@+id/text_estante_vazia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sua estante está vazia."
+        android:textColor="#888888"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

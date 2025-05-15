@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fundo_folhas"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/image_capa"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/text_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#264e2b"
+            android:layout_marginBottom="8dp"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/text_autores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:layout_marginBottom="12dp"
+            android:textAlignment="center" />
+
+        <!-- Descrição com botão "mais" -->
+        <TextView
+            android:id="@+id/text_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="5"
+            android:ellipsize="end"
+            android:textColor="#333333"
+            android:background="@drawable/bg_descricao_fundo"
+            android:padding="12dp"
+            android:layout_marginBottom="4dp"
+            android:lineSpacingExtra="4dp" />
+
+        <TextView
+            android:id="@+id/text_ver_mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mais"
+            android:textColor="#388E3C"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Avaliação -->
+        <RatingBar
+            android:id="@+id/rating_detalhe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_resenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_descricao_fundo"
+            android:padding="12dp"
+            android:textColor="#333333"
+            android:lineSpacingExtra="4dp"
+            android:text="Nenhuma resenha."
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botão: Adicionar à Estante -->
+        <Button
+            android:id="@+id/btn_adicionar_estante"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Adicionar à Estante"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="@drawable/button_yellow"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

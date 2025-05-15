@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_descricao_fundo"
+    android:layout_marginBottom="12dp"
+    android:padding="12dp">
+
+    <!-- Capa do livro -->
+    <ImageView
+        android:id="@+id/capa_livro"
+        android:layout_width="100dp"
+        android:layout_height="184dp"
+        android:background="@drawable/edit_text_background"
+        android:scaleType="centerCrop" />
+
+    <!-- Conteúdo -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/titulo_livro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Título do Livro"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#264e2b" />
+
+        <TextView
+            android:id="@+id/autores_livro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor"
+            android:textColor="#777777"
+            android:textSize="13sp"
+            android:layout_marginTop="2dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quero ler"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1976D2"
+                android:background="@drawable/status_label_background" />
+
+            <ImageButton
+                android:id="@+id/btn_editar_status"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="6dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/ic_edit"
+                app:tint="#388E3C"
+                android:contentDescription="Editar status" />
+        </LinearLayout>
+
+        <!-- Estrelas padrão do sistema -->
+        <RatingBar
+            android:id="@+id/rating_estrela"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="end"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            android:stepSize="0.5" />
+
+
+        <!-- Botões -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_avaliar"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#4CAF50"
+                android:minWidth="0dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="Avaliar"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_remover"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="#D32F2F"
+                android:minWidth="0dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:rotationY="0"
+                android:text="Remover"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

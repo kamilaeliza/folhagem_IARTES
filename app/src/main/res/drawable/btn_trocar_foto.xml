@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/btn_trocar_foto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Foto"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:backgroundTint="#388E3C"
+        android:layout_marginBottom="24dp" />
+
+
+</selector>

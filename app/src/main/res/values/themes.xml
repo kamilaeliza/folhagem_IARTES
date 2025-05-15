@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base Theme (Material 3) -->
+    <style name="Base.Theme.Folhagem" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Cor primária -->
+        <item name="colorPrimary">@color/green_primary</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+
+        <!-- Cor secundária (afeta RatingBar padrão) -->
+        <item name="colorSecondary">@color/green_accent</item>
+        <item name="colorTertiary">@color/green_accent</item> <!-- Em alguns Androids afeta a estrela -->
+
+        <!-- Outros ajustes -->
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+
+    <!-- Tema principal -->
+    <style name="Theme.Folhagem" parent="Base.Theme.Folhagem" />
+
+</resources>

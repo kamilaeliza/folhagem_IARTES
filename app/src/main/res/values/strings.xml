@@ -1,0 +1,52 @@
+<resources>
+    <!-- App -->
+    <string name="app_name">Folhagem</string>
+
+    <!-- Navegação -->
+    <string name="nav_home">Home</string>
+    <string name="nav_estante">Estante</string>
+    <string name="nav_perfil">Perfil</string>
+
+    <!-- Login -->
+    <string name="login_email_hint">Email</string>
+    <string name="login_senha_hint">Senha</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_esqueci_senha">Esqueci minha senha</string>
+    <string name="login_criar_conta">Criar nova conta</string>
+
+    <!-- Cadastro -->
+    <string name="cadastro_nome_hint">Nome</string>
+    <string name="cadastro_email_hint">Email</string>
+    <string name="cadastro_senha_hint">Senha</string>
+    <string name="cadastro_botao">Cadastrar</string>
+
+    <!-- Perfil -->
+    <string name="editar_perfil">Editar perfil</string>
+    <string name="sair">Sair</string>
+    <string name="media">Média</string>
+    <string name="estante">Estante</string>
+    <string name="foto_perfil">Foto do perfil</string>
+
+        <!-- Editar Perfil -->
+    <string name="salvar">Salvar</string>
+    <string name="trocar_foto">Trocar foto</string>
+
+    <!-- Avaliação -->
+    <string name="avaliar">Avaliar</string>
+    <string name="comentario_hint">Comentário</string>
+    <string name="salvar_resenha">Salvar resenha</string>
+    <string name="nota">Nota</string>
+
+    <!-- Estante -->
+    <string name="buscar_hint">Buscar livro...</string>
+    <string name="mensagem_estante_vazia">Sua estante está vazia.</string>
+    <string name="remover">Remover</string>
+
+    <!-- Status -->
+    <string-array name="opcoes_status">
+        <item>TODOS</item>
+        <item>Quero ler</item>
+        <item>Lendo</item>
+        <item>Lido</item>
+    </string-array>
+</resources>
